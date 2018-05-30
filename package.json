@@ -1,7 +1,7 @@
 {
-  "name": "react-input",
+  "name": "react-layout",
   "version": "1.0.0",
-  "description": "react-input React component",
+  "description": "react-layout React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": ["css", "es", "lib", "umd"],
