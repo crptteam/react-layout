@@ -4,18 +4,18 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-6 компонентов для базовой верстки.
+Layout components pack.
 
 ## Usage
 
 
 ```javascript
 
-import {Header, Layout, Footer, Content, Container, Column } from  "@crpt/crpt-react-library";
+import { Header, Layout, Footer, Content, Container, Column, InlineWrap } from  "@crpt/react-layout";
 
 ```
 
-Layout всегда контейнер верхнего уровня.
+Layout is allways a top level component.
 
 
 ```html
@@ -26,7 +26,7 @@ Layout всегда контейнер верхнего уровня.
      <Layout/>
 ```
 
-Layout можно бесконечно вкладывать.
+Layout can be inset indefinitely.
 
 
 ```html
@@ -45,7 +45,7 @@ Layout можно бесконечно вкладывать.
      <Layout/>
 ```
 
-У компонентов Header, Layout, Footer, Content нет специальных props.
+Header, Layout, Footer and Content components have no special props.
 
 
 ### Container
@@ -60,8 +60,8 @@ Layout можно бесконечно вкладывать.
 
 | PropName | Описание | Пример |
 |---|---|---|
-| gutter: Number | Расстояние между внутренними `<Column/>` в пикселях. |  `<Container gutter={16}>`<br/>`<Column></Column>`<br/>`<Column></Column>`<br/>`</Container>` |
-| justify: String | Значение align-items, позволяет выровнять по высоте или растянуть на всю высоту. |  `<Container justify="stretch">`<br/>`<Column></Column>`<br/>`<Column></Column>`<br/>`</Container>` |
+| gutter: Number | Spacing between `<Column/>` in pixels. |  `<Container gutter={16}>`<br/>`<Column></Column>`<br/>`<Column></Column>`<br/>`</Container>` |
+| justify: String | align-items flex value. |  `<Container justify="stretch">`<br/>`<Column></Column>`<br/>`<Column></Column>`<br/>`</Container>` |
 
 
 
@@ -69,7 +69,7 @@ Layout можно бесконечно вкладывать.
 
 | PropName | Описание | Пример |
 |---|---|---|
-| col: Number | Ширина в юнитах.<br/>Ширина контейнера 24 юнита.<br/>Если не указывать это значение, то `<Column/>` заполнит все свободное пространство. |  `<Container>`<br/>`<Column></Column>`<br/>`<Column col={6}></Column>`<br/>`</Container>` |
+| col: Number | Width in units. Maximum value: 24. If not set, fills all remaining space. |  `<Container>`<br/>`<Column></Column>`<br/>`<Column col={6}></Column>`<br/>`</Container>` |
 
 
 
