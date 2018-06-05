@@ -1,4 +1,4 @@
-# react-layout
+# react-page-layout
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
@@ -11,7 +11,7 @@ Layout components pack.
 
 ```javascript
 
-import { Header, Layout, Footer, Content, Container, Column, InlineWrap } from  "@crpt/react-layout";
+import { Header, Layout, Footer, Content, Container, Column, InlineWrap } from  "@crpt/react-page-layout";
 
 ```
 
