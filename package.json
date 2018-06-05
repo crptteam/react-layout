@@ -1,7 +1,7 @@
 {
-  "name": "@crpt/react-layout",
+  "name": "@crpt/react-page-layout",
   "version": "1.0.6",
-  "description": "react-layout React component",
+  "description": "react-page-layout React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
