@@ -1,312 +1,190 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input Should renders without problems 1`] = `
-<Layout>
-  <OuterLayout>
-    <div
-      className="OuterLayout-grMLHR csRMKR"
-    >
-      <Header>
-        <OuterHeader>
-          <div
-            className="OuterHeader-dPqjSd cUgmje"
-          >
-            <InnerHeader
-              theme={
-                Object {
-                  "Content": Object {
-                    "color": "#212C42",
-                    "dark": Object {
-                      "background": "#212C42",
-                    },
-                    "light": Object {
-                      "background": "#E5E5E5",
-                    },
-                    "tobacco": Object {
-                      "background": "#f7f9f9",
-                    },
-                  },
-                  "Footer": Object {
-                    "background": "#212C42",
-                    "color": "#FFFFFF",
-                  },
-                  "Header": Object {
-                    "background": "#212C42",
-                    "color": "#FFFFFF",
-                  },
-                }
-              }
-            >
-              <InnerHeader__Elem
-                background="#212C42"
-                color="#FFFFFF"
-                theme={
-                  Object {
-                    "Content": Object {
-                      "color": "#212C42",
-                      "dark": Object {
-                        "background": "#212C42",
-                      },
-                      "light": Object {
-                        "background": "#E5E5E5",
-                      },
-                      "tobacco": Object {
-                        "background": "#f7f9f9",
-                      },
-                    },
-                    "Footer": Object {
-                      "background": "#212C42",
-                      "color": "#FFFFFF",
-                    },
-                    "Header": Object {
-                      "background": "#212C42",
-                      "color": "#FFFFFF",
-                    },
-                  }
-                }
+<WithTheme(Layout)>
+  <Layout>
+    <OuterLayout>
+      <div
+        className="OuterLayout-grMLHR csRMKR"
+      >
+        <WithTheme(Header)>
+          <Header>
+            <OuterHeader>
+              <div
+                className="OuterHeader-dPqjSd cUgmje"
               >
-                <div
-                  className="InnerHeader__Elem-cHbucc gKURRE"
-                  color="#FFFFFF"
-                >
-                  I am header.
-                </div>
-              </InnerHeader__Elem>
-            </InnerHeader>
-          </div>
-        </OuterHeader>
-      </Header>
-      <Content>
-        <OuterContent>
-          <div
-            className="OuterContent-koFsIb dCBBnm"
-          >
-            <InnerContent
-              theme={
-                Object {
-                  "Content": Object {
-                    "color": "#212C42",
-                    "dark": Object {
-                      "background": "#212C42",
-                    },
-                    "light": Object {
-                      "background": "#E5E5E5",
-                    },
-                    "tobacco": Object {
-                      "background": "#f7f9f9",
-                    },
-                  },
-                  "Footer": Object {
-                    "background": "#212C42",
-                    "color": "#FFFFFF",
-                  },
-                  "Header": Object {
-                    "background": "#212C42",
-                    "color": "#FFFFFF",
-                  },
-                }
-              }
-            >
-              <InnerContent__Elem
-                background="#E5E5E5"
-                color="#212C42"
-                theme={
-                  Object {
-                    "Content": Object {
-                      "color": "#212C42",
-                      "dark": Object {
-                        "background": "#212C42",
-                      },
-                      "light": Object {
-                        "background": "#E5E5E5",
-                      },
-                      "tobacco": Object {
-                        "background": "#f7f9f9",
-                      },
-                    },
-                    "Footer": Object {
-                      "background": "#212C42",
-                      "color": "#FFFFFF",
-                    },
-                    "Header": Object {
-                      "background": "#212C42",
-                      "color": "#FFFFFF",
-                    },
-                  }
-                }
+                <InnerHeader>
+                  <InnerHeader__Elem
+                    background="#212C42"
+                    color="#FFFFFF"
+                  >
+                    <div
+                      className="InnerHeader__Elem-cHbucc gKURRE"
+                      color="#FFFFFF"
+                    >
+                      I am header.
+                    </div>
+                  </InnerHeader__Elem>
+                </InnerHeader>
+              </div>
+            </OuterHeader>
+          </Header>
+        </WithTheme(Header)>
+        <WithTheme(Content)>
+          <Content>
+            <OuterContent>
+              <div
+                className="OuterContent-koFsIb dCBBnm"
               >
-                <div
-                  className="InnerContent__Elem-eYwcsk ekVinH"
-                  color="#212C42"
-                >
-                  <Container>
-                    <OuterContainer>
-                      <OuterContainer__Elem>
-                        <div
-                          className="OuterContainer__Elem-iYocSL jmEptY"
-                        >
-                          <Column
-                            first={true}
-                            key=".0"
-                            last={false}
-                          >
-                            <OuterColumn
-                              first={true}
-                              last={false}
-                            >
-                              <OuterColumn__Elem
-                                first={true}
-                                last={false}
+                <InnerContent>
+                  <InnerContent__Elem
+                    background="#E5E5E5"
+                    color="#212C42"
+                  >
+                    <div
+                      className="InnerContent__Elem-eYwcsk ekVinH"
+                      color="#212C42"
+                    >
+                      <WithTheme(Container)>
+                        <Container>
+                          <OuterContainer>
+                            <OuterContainer__Elem>
+                              <div
+                                className="OuterContainer__Elem-iYocSL jmEptY"
                               >
-                                <div
-                                  className="OuterColumn__Elem-bwpHlP hkrUAK"
+                                <WithTheme(Column)
+                                  first={true}
+                                  key=".0"
+                                  last={false}
                                 >
-                                  <InnerColumn__Inner>
-                                    <div
-                                      className="InnerColumn__Inner-fGuEuo kQnsUP"
+                                  <Column
+                                    first={true}
+                                    last={false}
+                                  >
+                                    <OuterColumn
+                                      first={true}
+                                      last={false}
                                     >
-                                      Column one.
-                                    </div>
-                                  </InnerColumn__Inner>
-                                </div>
-                              </OuterColumn__Elem>
-                            </OuterColumn>
-                          </Column>
-                          <Column
-                            first={false}
-                            key=".1"
-                            last={false}
-                          >
-                            <OuterColumn
-                              first={false}
-                              last={false}
-                            >
-                              <OuterColumn__Elem
-                                first={false}
-                                last={false}
-                              >
-                                <div
-                                  className="OuterColumn__Elem-bwpHlP hkrUAK"
+                                      <OuterColumn__Elem
+                                        first={true}
+                                        last={false}
+                                      >
+                                        <div
+                                          className="OuterColumn__Elem-bwpHlP hkrUAK"
+                                        >
+                                          <InnerColumn__Inner>
+                                            <div
+                                              className="InnerColumn__Inner-fGuEuo kQnsUP"
+                                            >
+                                              Column one.
+                                            </div>
+                                          </InnerColumn__Inner>
+                                        </div>
+                                      </OuterColumn__Elem>
+                                    </OuterColumn>
+                                  </Column>
+                                </WithTheme(Column)>
+                                <WithTheme(Column)
+                                  first={false}
+                                  key=".1"
+                                  last={false}
                                 >
-                                  <InnerColumn__Inner>
-                                    <div
-                                      className="InnerColumn__Inner-fGuEuo kQnsUP"
+                                  <Column
+                                    first={false}
+                                    last={false}
+                                  >
+                                    <OuterColumn
+                                      first={false}
+                                      last={false}
                                     >
-                                      Column two.
-                                    </div>
-                                  </InnerColumn__Inner>
-                                </div>
-                              </OuterColumn__Elem>
-                            </OuterColumn>
-                          </Column>
-                          <Column
-                            first={false}
-                            key=".2"
-                            last={true}
-                          >
-                            <OuterColumn
-                              first={false}
-                              last={true}
-                            >
-                              <OuterColumn__Elem
-                                first={false}
-                                last={true}
-                              >
-                                <div
-                                  className="OuterColumn__Elem-bwpHlP hkrUAK"
+                                      <OuterColumn__Elem
+                                        first={false}
+                                        last={false}
+                                      >
+                                        <div
+                                          className="OuterColumn__Elem-bwpHlP hkrUAK"
+                                        >
+                                          <InnerColumn__Inner>
+                                            <div
+                                              className="InnerColumn__Inner-fGuEuo kQnsUP"
+                                            >
+                                              Column two.
+                                            </div>
+                                          </InnerColumn__Inner>
+                                        </div>
+                                      </OuterColumn__Elem>
+                                    </OuterColumn>
+                                  </Column>
+                                </WithTheme(Column)>
+                                <WithTheme(Column)
+                                  first={false}
+                                  key=".2"
+                                  last={true}
                                 >
-                                  <InnerColumn__Inner>
-                                    <div
-                                      className="InnerColumn__Inner-fGuEuo kQnsUP"
+                                  <Column
+                                    first={false}
+                                    last={true}
+                                  >
+                                    <OuterColumn
+                                      first={false}
+                                      last={true}
                                     >
-                                      Column three.
-                                    </div>
-                                  </InnerColumn__Inner>
-                                </div>
-                              </OuterColumn__Elem>
-                            </OuterColumn>
-                          </Column>
-                        </div>
-                      </OuterContainer__Elem>
-                    </OuterContainer>
-                  </Container>
-                </div>
-              </InnerContent__Elem>
-            </InnerContent>
-          </div>
-        </OuterContent>
-      </Content>
-      <Footer>
-        <OuterFooter>
-          <div
-            className="OuterFooter-zNYqb kAiVuQ"
-          >
-            <InnerFooter
-              theme={
-                Object {
-                  "Content": Object {
-                    "color": "#212C42",
-                    "dark": Object {
-                      "background": "#212C42",
-                    },
-                    "light": Object {
-                      "background": "#E5E5E5",
-                    },
-                    "tobacco": Object {
-                      "background": "#f7f9f9",
-                    },
-                  },
-                  "Footer": Object {
-                    "background": "#212C42",
-                    "color": "#FFFFFF",
-                  },
-                  "Header": Object {
-                    "background": "#212C42",
-                    "color": "#FFFFFF",
-                  },
-                }
-              }
-            >
-              <InnerFooter__Elem
-                background="#212C42"
-                color="#FFFFFF"
-                theme={
-                  Object {
-                    "Content": Object {
-                      "color": "#212C42",
-                      "dark": Object {
-                        "background": "#212C42",
-                      },
-                      "light": Object {
-                        "background": "#E5E5E5",
-                      },
-                      "tobacco": Object {
-                        "background": "#f7f9f9",
-                      },
-                    },
-                    "Footer": Object {
-                      "background": "#212C42",
-                      "color": "#FFFFFF",
-                    },
-                    "Header": Object {
-                      "background": "#212C42",
-                      "color": "#FFFFFF",
-                    },
-                  }
-                }
+                                      <OuterColumn__Elem
+                                        first={false}
+                                        last={true}
+                                      >
+                                        <div
+                                          className="OuterColumn__Elem-bwpHlP hkrUAK"
+                                        >
+                                          <InnerColumn__Inner>
+                                            <div
+                                              className="InnerColumn__Inner-fGuEuo kQnsUP"
+                                            >
+                                              Column three.
+                                            </div>
+                                          </InnerColumn__Inner>
+                                        </div>
+                                      </OuterColumn__Elem>
+                                    </OuterColumn>
+                                  </Column>
+                                </WithTheme(Column)>
+                              </div>
+                            </OuterContainer__Elem>
+                          </OuterContainer>
+                        </Container>
+                      </WithTheme(Container)>
+                    </div>
+                  </InnerContent__Elem>
+                </InnerContent>
+              </div>
+            </OuterContent>
+          </Content>
+        </WithTheme(Content)>
+        <WithTheme(Footer)>
+          <Footer>
+            <OuterFooter>
+              <div
+                className="OuterFooter-zNYqb kAiVuQ"
               >
-                <div
-                  className="InnerFooter__Elem-cVCqvV iFFdEa"
-                  color="#FFFFFF"
-                >
-                  I am footer.
-                </div>
-              </InnerFooter__Elem>
-            </InnerFooter>
-          </div>
-        </OuterFooter>
-      </Footer>
-    </div>
-  </OuterLayout>
-</Layout>
+                <InnerFooter>
+                  <InnerFooter__Elem
+                    background="#212C42"
+                    color="#FFFFFF"
+                  >
+                    <div
+                      className="InnerFooter__Elem-cVCqvV iFFdEa"
+                      color="#FFFFFF"
+                    >
+                      I am footer.
+                    </div>
+                  </InnerFooter__Elem>
+                </InnerFooter>
+              </div>
+            </OuterFooter>
+          </Footer>
+        </WithTheme(Footer)>
+      </div>
+    </OuterLayout>
+  </Layout>
+</WithTheme(Layout)>
 `;

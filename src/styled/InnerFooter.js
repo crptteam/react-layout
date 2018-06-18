@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys } from '../utils';
-import defaultTheme from '../theme/defaultTheme';
+import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import defaultTheme from "../theme/defaultTheme";
+import { COLORS } from "../constants";
 
 const Elem = styled.div`
   display: table-cell;
@@ -16,8 +17,14 @@ const Elem = styled.div`
 `;
 
 const InnerFooter = props => {
+  const mergedFooter = innerMerge(
+    {},
+    (defaultTheme.PageLayout && defaultTheme.PageLayout.Footer) || {},
+    (props.theme && props.theme.PageLayout && props.theme.PageLayout.Footer) ||
+      {}
+  );
 
-  const theme = getThemeAsPlainTextByKeys(props.theme && props.theme.Footer || defaultTheme.Footer);
+  const theme = getThemeAsPlainTextByKeys(mergedFooter);
 
   return <Elem {...theme} {...props} />;
 };
