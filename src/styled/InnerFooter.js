@@ -19,7 +19,7 @@ const Elem = styled.div`
 const InnerFooter = props => {
   const mergedFooter = innerMerge(
     {},
-    (defaultTheme.PageLayout && defaultTheme.PageLayout.Footer) || {},
+    defaultTheme.PageLayout.Footer,
     (props.theme && props.theme.PageLayout && props.theme.PageLayout.Footer) ||
       {}
   );
