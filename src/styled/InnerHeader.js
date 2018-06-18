@@ -18,7 +18,7 @@ const Elem = styled.div`
 const InnerHeader = props => {
   const mergedHeader = innerMerge(
     {},
-    (defaultTheme.PageLayout && defaultTheme.PageLayout.Header) || {},
+    defaultTheme.PageLayout.Header,
     (props.theme && props.theme.PageLayout && props.theme.PageLayout.Header) ||
       {}
   );

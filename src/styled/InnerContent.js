@@ -28,7 +28,7 @@ const InnerContent = props => {
 
   const mergedContent = innerMerge(
     {},
-    (defaultTheme.PageLayout && defaultTheme.PageLayout.Content) || {},
+    defaultTheme.PageLayout.Content,
     (props.theme && props.theme.PageLayout && props.theme.PageLayout.Content) ||
       {}
   );
