@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withTheme } from "styled-components";
 
 import OuterContainer from '../styled/OuterContainer';
 
@@ -34,4 +35,4 @@ Container.propTypes = {
   fillWidth: PropTypes.bool
 };
 
-export default Container;
+export default withTheme(Container);

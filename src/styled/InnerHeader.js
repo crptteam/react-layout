@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys } from '../utils';
-import defaultTheme from '../theme/defaultTheme';
+import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import defaultTheme from "../theme/defaultTheme";
 
 const Elem = styled.div`
   box-sizing: border-box;
@@ -16,8 +16,14 @@ const Elem = styled.div`
 `;
 
 const InnerHeader = props => {
+  const mergedHeader = innerMerge(
+    {},
+    (defaultTheme.PageLayout && defaultTheme.PageLayout.Header) || {},
+    (props.theme && props.theme.PageLayout && props.theme.PageLayout.Header) ||
+      {}
+  );
 
-  const theme = getThemeAsPlainTextByKeys(props.theme && props.theme.Header || defaultTheme.Header);
+  const theme = getThemeAsPlainTextByKeys(mergedHeader);
 
   return <Elem {...theme} {...props} />;
 };
