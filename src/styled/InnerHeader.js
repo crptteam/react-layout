@@ -10,6 +10,7 @@ const Elem = styled.div`
   color: ${props => props.color};
   padding-top: 23px;
   padding-bottom: 23px;
+  position: relative;
   padding-left: 80px;
   padding-right: 80px;
   display: table-cell;
