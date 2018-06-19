@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import { getThemeAsPlainObjectByKeys, innerMerge } from "../utils";
 import defaultTheme from "../theme/defaultTheme";
 
 const Elem = styled.div`
@@ -23,7 +23,7 @@ const InnerHeader = props => {
       {}
   );
 
-  const theme = getThemeAsPlainTextByKeys(mergedHeader);
+  const theme = getThemeAsPlainObjectByKeys(mergedHeader);
 
   return <Elem {...theme} {...props} />;
 };

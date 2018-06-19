@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import { getThemeAsPlainObjectByKeys, innerMerge } from "../utils";
 import defaultTheme from "../theme/defaultTheme";
 import { COLORS } from "../constants";
 
@@ -24,7 +24,7 @@ const InnerContent = props => {
     props.theme && props.theme.PageLayout ? props.theme.PageLayout : {}
   );
 
-  const theme = getThemeAsPlainTextByKeys(merged);
+  const theme = getThemeAsPlainObjectByKeys(merged);
 
   const mergedContent = innerMerge(
     {},
@@ -35,7 +35,7 @@ const InnerContent = props => {
 
   Object.assign(
     theme,
-    getThemeAsPlainTextByKeys(
+    getThemeAsPlainObjectByKeys(
       mergedContent,
       props.colored ? props.colored : COLORS.default
     )
