@@ -12,6 +12,7 @@ const Elem = styled.div`
   padding-top: 33px;
   padding-bottom: 45px;
   padding-left: 80px;
+  position: relative;
   padding-right: 80px;
   box-sizing: border-box;
 `;
