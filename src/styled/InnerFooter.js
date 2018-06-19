@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import { getThemeAsPlainObjectByKeys, innerMerge } from "../utils";
 import defaultTheme from "../theme/defaultTheme";
 import { COLORS } from "../constants";
 
@@ -24,7 +24,7 @@ const InnerFooter = props => {
       {}
   );
 
-  const theme = getThemeAsPlainTextByKeys(mergedFooter);
+  const theme = getThemeAsPlainObjectByKeys(mergedFooter);
 
   return <Elem {...theme} {...props} />;
 };

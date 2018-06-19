@@ -5,6 +5,7 @@ const OuterFooter = styled.div`
   height: 1px;
   display: table-row;
   width: 100%;
+  position: relative;
 `;
 
 export default OuterFooter;
