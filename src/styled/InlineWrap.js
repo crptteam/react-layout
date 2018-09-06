@@ -5,6 +5,8 @@ const InlineWrap = styled.div`
   width: ${props => (props.width ? props.width : 'auto')};
   height: ${props => (props.height ? props.height : 'auto')};
   margin-left: ${props => (props.right ? 'auto' : 0)};
+  margin-bottom: ${props => (props.marginBottom ? props.marginBottom : 0)};
+  padding-bottom: ${props => (props.paddingBottom ? props.paddingBottom : 0)};
   align-items: ${props => (props.alignItems ? props.alignItems : 'flex-start')};
   justify-content: ${props =>
     props.justifyContent ? props.justifyContent : 'flex-start'};
