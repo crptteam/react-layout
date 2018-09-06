@@ -11,7 +11,7 @@ exports[`Input Should renders without problems 1`] = `
           <Header>
             <OuterHeader>
               <div
-                className="OuterHeader-dPqjSd cUgmje"
+                className="OuterHeader-dPqjSd iRMKMX"
               >
                 <InnerHeader>
                   <InnerHeader__Elem
@@ -19,7 +19,7 @@ exports[`Input Should renders without problems 1`] = `
                     color="#FFFFFF"
                   >
                     <div
-                      className="InnerHeader__Elem-cHbucc gKURRE"
+                      className="InnerHeader__Elem-cHbucc kFLLHQ"
                       color="#FFFFFF"
                     >
                       I am header.
@@ -164,7 +164,7 @@ exports[`Input Should renders without problems 1`] = `
           <Footer>
             <OuterFooter>
               <div
-                className="OuterFooter-zNYqb kAiVuQ"
+                className="OuterFooter-zNYqb gaDniJ"
               >
                 <InnerFooter>
                   <InnerFooter__Elem
@@ -172,7 +172,7 @@ exports[`Input Should renders without problems 1`] = `
                     color="#FFFFFF"
                   >
                     <div
-                      className="InnerFooter__Elem-cVCqvV iFFdEa"
+                      className="InnerFooter__Elem-cVCqvV cKTgUr"
                       color="#FFFFFF"
                     >
                       I am footer.
