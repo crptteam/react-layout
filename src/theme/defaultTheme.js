@@ -4,7 +4,7 @@ export default {
       light: {
         background: "#E5E5E5"
       },
-      tobacco: {
+      3: {
         background: "#f7f9f9"
       },
       dark: {

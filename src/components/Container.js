@@ -8,11 +8,11 @@ const Container = props => {
   const { children, gutter, justify, fillWidth, ...otherProps } = props;
 
   const childrenWithProps = React.Children.map(children, (child, i) =>
-    React.cloneElement(child, {
+    child ? React.cloneElement(child, {
       gutter: gutter,
       first: i === 0,
       last: i === children.length - 1
-    })
+    }) : null
   );
 
   return (
