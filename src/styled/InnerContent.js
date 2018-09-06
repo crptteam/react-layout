@@ -18,6 +18,7 @@ const Elem = styled.div`
 `;
 
 const InnerContent = props => {
+
   const merged = innerMerge(
     {},
     defaultTheme.PageLayout,
